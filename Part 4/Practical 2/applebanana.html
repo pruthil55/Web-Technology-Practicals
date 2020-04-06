@@ -1,0 +1,91 @@
+
+<html>
+<head>
+    <title>ab</title>
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+
+      .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%); 
+        text-align: center;
+      }
+
+      .container:hover .image {
+        opacity: 0.3;
+      }
+
+      .container:hover .middle {
+        opacity: 1;
+      }
+
+      .text{
+        height: 900px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #a30505;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+        font-family: cursive;
+        height: 50%;
+        margin-top: 200px;
+      }
+
+      .text1 {
+        height: 900px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color:yellow;
+        font-size: 16px;
+        padding: 16px 32px;
+        font-family: cursive;
+        color: black;
+        height: 50%;
+        margin-top: 200px;
+      }
+
+      div{
+        width: 50%;
+        height:100%;
+        float: left;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+
+    <img src="banana.jpg" alt="error" class="image" style="width:100%;height: 100%">
+    <div class="middle">
+      <div class="text1">A banana is an edible fruit – botanically a berry[1][2] – produced by several kinds of large herbaceous flowering plants in the genus Musa.<br>In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas.</div>
+      </div>
+    </div>
+
+  <div class="container" >
+    
+    <img src="apple.jpg" alt="error" class="image" style="width:100%;height: 100%">
+    <div class="middle">
+      <div class="text">An apple is a sweet, edible fruit produced by an apple tree.<br> Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus.<br> The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today.</div>
+  </div>
+  </div>
+
+</body>
+</html>
