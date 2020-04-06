@@ -1,0 +1,47 @@
+body{
+	background-color: black;
+	color: white;
+	margin: 10%;
+}
+
+fieldset{
+	border: 2px solid white;
+	border-radius: 15px;
+	width: 800px;
+	height: 250px;
+	margin: 30vh auto;
+	/* margin-top: 30px; */
+}
+
+fieldset legend{
+	font-size: 25px;
+}
+
+.input input{
+	padding-left: 10px;
+	padding-right: 10px;
+	border:1px solid white;
+	border-radius: 15px;
+	background-color: transparent;
+	color: white;
+	font-size: 15px;
+	outline: none;
+	width: 200px;
+	height: 30px;
+	outline: none;
+}
+
+.input button{
+	width: 100px;
+	height: 40px;
+	background-color: transparent;
+	color: white;
+	font-size: 15px;
+	border-radius: 10px;
+	outline: none;
+}
+
+.input button:hover{
+	background-color: white;
+	color: black;
+}

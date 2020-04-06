@@ -1,0 +1,95 @@
+/*div,h1,h3,input,select,button,label{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p{
+    font-family: 'Sen', sans-serif;
+	color: #3B3B3B;
+}
+
+.field{
+	flex: auto;
+	margin-top: 5px;
+}
+
+.input{
+	position: relative;
+	width: 800px;
+	height: 50px;
+}
+
+.input button{
+	margin-top: 20px;
+	height: 50px;
+	width: 100px;
+	border-radius: 7px;
+	line-height: 50px;
+	font-size: 16px;
+	background-color: dodgerblue;
+	color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border: none;
+	box-shadow: 0 4px 0 lightblue;
+	outline: none;
+	cursor: pointer;
+	display: block;
+}
+
+.input button:active{
+	position: absolute;
+	top: 4px;
+	box-shadow: unset;
+}
+
+@media screen and (max-width: 1000px){
+	.input{
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.input{
+		width: 400px;
+		font-size: 20px;
+	}
+}*/
+body{
+	background-color: black;
+	color: white;
+}
+fieldset{
+	border:2px solid white;
+	border-radius: 20px;
+	padding:20px;
+	margin-left: 30%;
+	background-color: transparent;
+}
+.input input,select{
+    border:1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 30%;
+    height:50px;
+    color: white;
+    font-size: 15px;
+}
+.input button{
+	border:1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 10%;
+    height: 50px;
+    font-size: 15px;
+}
+.input button:hover{
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,77 @@
+<?php
+    include 'connection.php';
+
+    if(isset($_POST['submit']))
+    {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+
+        $q = "INSERT INTO mycrud.login(username, password) VALUES ('$username', '$password')";
+        $query = mysqli_query($con, $q);
+    }
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0js/bootstrap.min.js"></script>
+    <style>
+        body
+        {
+            background-image:url('download.jpg');
+            background-size:cover;
+        }
+        .form{
+            background-color: black;
+            border:3px solid orange;
+            color: white;
+            width: 40%;
+            margin-right: 20%;
+            margin-left: 30%;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 200px;
+            height: 300px;
+        }
+        .form h1{
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .input input{
+            width: 50%;
+            border:2px solid white;
+            outline: none;
+            color: white;
+            background-color: transparent;
+            border-radius: 15px;
+            padding-left: 10px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h1>Insert Information</h1>
+       <form class="input">
+           <label>Username:</label><br>
+            <input type="text" name="username" placeholder="Username" autocomplete="off" />
+            <br>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="Password" autocomplete="off" />
+            <br><br>
+            <input type="submit" name="submit" style="width:200px;
+            background-color: darkgreen;
+            color: white;">
+       </form>
+    </div>
+</body>
+</html>
