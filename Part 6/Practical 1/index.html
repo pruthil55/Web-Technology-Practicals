@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-size: 48px;
+    }
+    div{
+        height: 200px;
+    }
+    #show,#slide-down{
+        display: none;
+    }
+    button{
+        height: 100px;
+        /* font-size: 14px; */
+        background-color: black;
+        color: white;
+    }
+    #slide-down{ background-color: #204d05;}
+    #slide-up{ background-color: #b59b51;}
+    #show{ background-color: #4d802e;}
+    #hide{ background-color: #050c4f;}
+    #toggle{ background-color: #3e4161;}
+</style>    
+</head>
+
+<body>
+    <button id="down_btn">Slide Down Button</button><br>
+    <div id="slide-down">Slide Down</div><br>
+    <button id="up_btn">Slide Up Button</button><br>
+    <div id="slide-up">Slide Up</div><br>
+    <button id="show_btn">Show Button</button><br>
+    <div id="show">Show</div><br>
+    <button id="hide_btn">Hide Button</button>
+    <div id="hide">Hide</div><br>
+    <button id="toggle_btn">Toggle Button</button><br>
+    <div id="toggle">Toggle</div><br>
+    <button id="stop_btn">Stop</button>
+    <script src="app.js"></script>
+</body>
+</html>
