@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+	<style>
+		body{
+			margin: 100px;
+		}
+		fieldset{
+			border:3px solid blue;
+			border-radius: 30px;
+			color: green;
+			padding: 30px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		select{
+			width: 100px;
+			font-size: 15px;
+			font-weight: bold;
+			border: 2px solid #7aa9ff;
+			border-radius: 20px;
+		}
+		option{
+            background-color: transparent;
+		}
+		input{
+			width: 200px;
+			border: 2px solid #7aa9ff;
+			border-radius: 20px;
+			height: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+    <fieldset>
+    	<legend>Registration Form</legend>
+    	<form>
+    		<label for="myFName">First Name: </label>
+    		<input type="text" name="myFName" id="myFName" pattern="[A-Za-z]" title="Text Only"> &nbsp;&nbsp;
+    		<label for="myLName">Last Name: </label>
+    		<input type="text" name="myLName" id="myLName" pattern="[A-Za-z]" title="Text Only"><br><br>
+    		<label for="myGender">Gender: </label>
+    		<select id="myGender">
+    			<option>Male</option>
+    			<option>Female</option>
+    			<option>Other</option>
+    		</select><br><br>
+    		<label for="myEmail">Email: </label>
+    		<input type="Email" name="myEmail" id="myEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+    		<label for="myPwd">Password: </label>
+    		<input type="Password" name="myPwd" id="myPwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+    		<label for="myCPwd">Confirm Password: </label>
+    		<input type="Password" name="myCPwd" id="myCPwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+  			<br><br>
+  			<input type="submit" name="submit" id="submit" value="SUBMIT" style="background-color: black; color: white; font: 15px bold; height: 40px;">
+    	</form>
+    </fieldset>
+</body>
+</html>
