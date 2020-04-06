@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+		function add(){
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a + b;
+			document.getElementById("answerAdd").value= c;
+		}
+		function subtract(){
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a - b;
+			document.getElementById("answerSub").value= c;
+		}
+		function multiply(){
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			c= a * b;
+			document.getElementById("answerMul").value= c;
+		}
+		function divide(){
+			var a,b,c;
+			a=Number(document.getElementById("first").value);
+			b=Number(document.getElementById("second").value);
+			if(b==0){
+				alert("Second Number is Zero");
+			}
+			else{
+				c= a / b;
+			    document.getElementById("answerDiv").value= c;
+			}
+		}
+	</script>
+	<style>
+		body{
+			background-color: black;
+			color: white;
+			text-align: center;
+			margin:100px;
+		}
+		button.allButtons{
+			width: 100px;
+			height: 50px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            outline: none;
+		}
+		.allButtons:hover{
+            background-color: white;
+            color: black;
+		}
+		input{
+			border:2px solid white;
+			color: white;
+			padding: 5px;
+			width: 20%;
+			height: 5%;
+			border-radius: 10px;
+			background-color: transparent;
+			outline: none;
+		}
+	</style>
+</head>
+<body>
+	Enter the First number : <input id="first"><br><br>
+	Enter the Second number: <input id="second"><br><br>
+	<button onclick="add()" class="allButtons">Add</button>
+	<input id="answerAdd"><br><br>
+	<button onclick="subtract()" class="allButtons">Subtract</button>
+	<input id="answerSub"><br><br>
+	<button onclick="multiply()" class="allButtons">Multiply</button>
+    <input id="answerMul"><br><br>
+    <button onclick="divide()" class="allButtons">Divide</button>
+    <input id="answerDiv">
+</body>
+</html>

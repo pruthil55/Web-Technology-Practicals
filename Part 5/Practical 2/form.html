@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+	<script src="formJS.js"></script>
+	<style>
+		body{
+			margin: 100px;
+		}
+		fieldset{
+			border:3px solid blue;
+			border-radius: 30px;
+			color: green;
+			padding: 30px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		select{
+			width: 100px;
+			height: 30px;
+			padding-left: 5px;
+			font-size: 15px;
+			font-weight: bold;
+			border: 2px solid #7aa9ff;
+			border-radius: 20px;
+			outline: none;
+		}
+		option{
+            background-color: transparent;
+		}
+		input{
+			width: 200px;
+			border: 2px solid #7aa9ff;
+			border-radius: 20px;
+			height: 30px;
+			padding-left: 20px;
+			padding-right: 20px;
+			font-size: 15px;
+			outline: none;
+		}
+		button#submitButton{
+			border:1px solid black;
+			background-color: darkgreen; 
+			color: white; 
+			font: 15px bold; 
+			height: 40px;
+			width: 90px;
+            border-radius: 15px;
+            outline: none;
+		}
+	</style>
+</head>
+<body>
+	<h3></h3>
+    <fieldset>
+    	<legend>Registration Form</legend>
+    	<form>
+    		<label for="myFName">First Name: </label>
+    		<input type="text" name="myFName" id="myFName" pattern="[A-Za-z]{1,}" title="Text Only"> &nbsp;&nbsp;
+    		<label for="myLName">Last Name: </label>
+    		<input type="text" name="myLName" id="myLName" pattern="[A-Za-z]{1,}" title="Text Only"><br><br>
+    		<label for="myGender">Gender: </label>
+    		<select id="myGender">
+    			<option>Male</option>
+    			<option>Female</option>
+    			<option>Other</option>
+    		</select><br><br>
+    		<label for="myEmail">Email: </label>
+    		<input type="Email" name="myEmail" id="myEmail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+    		<label for="myPwd">Password: </label>
+    		<input type="Password" name="myPwd" id="myPwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"><br><br>
+    		<label for="myCPwd">Confirm Password: </label>
+    		<input type="Password" name="myCPwd" id="myCPwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  			title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+  			<br><br>
+  			<button type="submit" id="submitButton">SUBMIT</button>
+    	</form>
+    </fieldset>
+</body>
+</html>
